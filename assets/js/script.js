@@ -33,8 +33,7 @@ $(document).ready(function() {
 
 // Configuring Hamburger menu 
 $(".myhamburger-wrapper").on('click', function() {
-    $(".mymenu-wrapper ul").slideToggle();
-    $(".mymenu-wrapper ul").css("display", "flex")
+    $(".mymenu-wrapper ul").toggle("fold");
 });
 // Configuring Hamburger menu ends
 
