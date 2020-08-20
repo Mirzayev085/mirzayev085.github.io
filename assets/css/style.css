@@ -561,9 +561,9 @@ body {
 
 footer {
     width: 100%;
-    height: 50vh;
+    height: auto;
     background: rgb(241, 241, 241);
-    padding: 50px 0px;
+    padding-top: 50px;
 }
 
 footer ul {
@@ -588,6 +588,7 @@ footer ul li {
 .scroll-to-top {
     width: 50px;
     height: 50px;
+    border-radius: 25px;
     background: #4986ffbe;
     position: fixed;
     bottom: 15px;
@@ -597,6 +598,10 @@ footer ul li {
     align-items: center;
     animation: toTop 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background: #4986ff;
 }
 
 @keyframes toTop {

@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
     // Configuring Testimonials Slider
-    $('.testimonial-slider').slick();
+    $('.testimonial-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
     // Configuring Testimonials Slider ends
 
     // Configuring Owl Carousel in Our Customers section
@@ -16,12 +19,12 @@ $(document).ready(function() {
                 autoplay: true
             },
             600: {
-                items: 3,
+                items: 2,
                 loop: true,
                 autoplay: true
             },
             1000: {
-                items: 4,
+                items: 3,
                 loop: false,
                 autoplay: true
             }
