@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 // Configuring Hamburger menu 
 $(".myhamburger-wrapper").on('click', function() {
-    $(".menu-links").toggle("drop", "fast");
+    $(".menu-links").slideToggle();
 });
 // Configuring Hamburger menu ends
 
