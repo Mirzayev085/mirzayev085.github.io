@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 // Configuring Hamburger menu 
 $(".myhamburger-wrapper").on('click', function() {
-    $(".mymenu-wrapper ul").toggle("fold");
+    $(".menu-links").toggle("drop", "fast");
 });
 // Configuring Hamburger menu ends
 
@@ -54,9 +54,11 @@ $('.counter').counterUp();
 // Scroll to top configuration starts
 window.onscroll = function isScrolled() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        $(".scroll-to-top").css("display", "grid")
+        $(".scroll-to-top").css("display", "grid");
+        $('header').css("background", "#1E88E5");
     } else {
-        $(".scroll-to-top").css("display", "none")
+        $(".scroll-to-top").css("display", "none");
+        $('header').css("background", "transparent")
     }
 };
 

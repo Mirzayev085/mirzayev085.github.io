@@ -13,104 +13,74 @@ body {
 }
 
 
-/* Header section starts */
+/* NEW HEADER STARTS */
 
-.mybrand {
+header {
+    background: transparent;
+    width: 100%;
+    height: 80px;
+    z-index: 99999999999;
+    position: fixed;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+}
+
+.menu-wrapper {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.brand {
     font-size: 20px;
     font-weight: bold;
     color: white;
     z-index: 999;
 }
 
-.myheader-wrapper {
-    display: flex;
-    background: transparent;
-    height: 64px;
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.137);
-}
-
-.mymenu-wrapper {
-    width: 80%;
-    margin: auto;
+.menu-links ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.mymenu-wrapper ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+    height: 80px;
     padding: 0;
     margin: 0;
 }
 
-@media screen and (min-width:952px) {
-    .mymenu-wrapper ul {
-        display: flex !important;
-    }
+.menu-links ul li {
+    list-style: none;
 }
 
-.mymenu-wrapper ul li {
-    padding: 20px;
+.position-relative {
     position: relative;
 }
 
-.mymenu-link:hover::before {
+.dropdown-menu {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    content: '';
-    top: 30%;
-    left: 50%;
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
-    transform: translate(-50%, -100%);
-    background: white;
-}
-
-.mymenu-link:hover::after {
-    position: absolute;
-    content: '';
-    top: 0;
+    top: 100%;
     left: 0;
-    height: 100%;
-    border-bottom: 2px solid white;
-    animation: menu-link 0.3s ease-in-out;
-    z-index: 1;
-    transition: 0.3s ease-in-out;
 }
 
-.mymenu-link:hover {
-    color: whitesmoke;
+.dropdown-menu li {
+    width: 100%;
 }
 
-.mymenu-link-account {
-    background: transparent;
-}
-
-.mymenu-link-account:hover {
-    background: #4986ff;
-}
-
-@keyframes menu-link {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-.mymenu-wrapper ul li a {
+.menu-links ul li a {
     color: white;
-    z-index: 99;
+    padding: 0px 20px;
 }
 
-.mymenu-wrapper ul li a {
+.menu-links ul li a:hover {
     text-decoration: none;
+    color: rgb(226, 226, 226);
 }
 
 .myhamburger-wrapper {
@@ -118,6 +88,49 @@ body {
 }
 
 @media screen and (max-width:950px) {
+    .menu-wrapper {
+        width: 95%;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    .menu-links {
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        z-index: 99;
+    }
+    .menu-links ul li a {
+        color: rgb(10, 10, 10);
+    }
+    .menu-links ul {
+        display: block;
+        background: #f3f3f3;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .menu-links ul li:hover {
+        background: #ffffff;
+        border-bottom: 4px solid #1e88e5;
+    }
+    .menu-links ul li a:hover {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .menu-links-mobile li:hover {
+        border: none !important;
+    }
+    .menu-wrapper {
+        line-height: 65px;
+    }
+    .dropdown-links {
+        background: #f3f3f3 !important;
+    }
     .myhamburger-wrapper {
         display: block;
         width: 30px;
@@ -150,29 +163,22 @@ body {
         height: 100%;
         background: white;
     }
-    .mymenu-wrapper {
-        width: 95%;
+}
+
+@media screen and (min-width:950px) {
+    .collapse-lg {
+        position: absolute !important;
+        background: #1565C0 !important;
     }
-    .mymenu-wrapper ul {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        background: #4985FF;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        z-index: 99;
-        display: none;
-        text-align: center;
-    }
-    .mymenu-wrapper ul li {
-        padding: 20px;
+    .dropdown-links {
+        display: block !important;
+        flex-direction: column !important;
+        height: auto !important;
     }
 }
 
 
-/* Header section ends */
+/* NEW HEADER ENDS */
 
 
 /* Main section starts */
@@ -192,7 +198,7 @@ body {
     border: none;
     border-radius: 20px;
     text-align: center;
-    background: #4985FF;
+    background: #1E88E5;
 }
 
 .btn-sharur:focus {
@@ -277,8 +283,8 @@ body {
 }
 
 .success {
-    background-color: #4985FF;
-    border: 2.5px dashed #4985FF;
+    background-color: #1E88E5;
+    border: 2.5px dashed #1E88E5;
 }
 
 @keyframes spin {
@@ -290,7 +296,7 @@ body {
 .my-icon-wrapper {
     width: 100px;
     height: 100px;
-    background: #4985FF;
+    background: #1E88E5;
     border-radius: 50%;
     position: relative;
 }
@@ -306,7 +312,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 1.5px solid #4985FF;
+    border: 1.5px solid #1E88E5;
     position: absolute;
     top: 50px;
     left: 50px;
@@ -528,7 +534,7 @@ body {
         width: 100% !important;
         height: 40px !important;
         margin-top: 10px !important;
-        background: #4985FF;
+        background: #1E88E5;
         border: none;
         color: white;
         border-radius: 50px !important;
@@ -538,7 +544,7 @@ body {
 .subscribe-button {
     width: 200px;
     height: auto;
-    background: #4985FF;
+    background: #1E88E5;
     border: none;
     color: white;
     border-top-right-radius: 50px;
