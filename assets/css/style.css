@@ -96,7 +96,7 @@ header {
     }
     .menu-links {
         width: 100%;
-        display: block;
+        display: none;
         justify-content: center;
         position: absolute;
         top: 77px;
