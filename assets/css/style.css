@@ -87,6 +87,18 @@ header {
     display: none;
 }
 
+.dropdown-links {
+    background: white;
+}
+
+.dropdown-links li a {
+    color: rgb(34, 34, 34) !important;
+}
+
+.dropdown-links li:hover .dropdown-links li a {
+    color: rgb(0, 0, 0) !important;
+}
+
 @media screen and (max-width:950px) {
     .menu-wrapper {
         width: 95%;
@@ -586,6 +598,130 @@ footer ul li {
 
 
 /* Footer section ends */
+
+
+/* Sbout us page starts */
+
+.about-us-page {
+    width: 100%;
+    height: 320px;
+    background: url('../img/aboutbg.jpg');
+}
+
+.about-us-page-header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.about-us-page-img {
+    max-width: 450px;
+}
+
+@media screen and (max-width:768px) {
+    .about-us-page-img {
+        max-width: 300px;
+    }
+}
+
+
+/*About us page ends */
+
+
+/* Our Team Section Starts */
+
+#our-team {
+    width: 100%;
+    height: auto;
+    background: #F6F6F8;
+    padding: 120px 0px !important;
+}
+
+.team-user {
+    width: 270px;
+    height: 100%;
+    position: relative;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.team-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    transition: 0.3s linear;
+}
+
+.team-user:hover .team-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.795);
+    transition: 0.3s linear;
+}
+
+.team-socials {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.socials-div {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translate(0px, 150px);
+    transition: 0.4s ease-in-out;
+}
+
+.team-user:hover .socials-div {
+    opacity: 1;
+    transform: translate(0px, -20px);
+    transition: 0.4s ease-in-out;
+}
+
+.socials-div .fa-facebook {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    color: white;
+    background: #4267B2;
+}
+
+.socials-div .fa-instagram {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.socials-div .fa-linkedin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    color: white;
+    background: #3d90f7;
+}
+
+
+/* Our Team Section Ends */
 
 
 /* <!-- Scroll to top button --> */
