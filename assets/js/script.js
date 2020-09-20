@@ -86,7 +86,7 @@ $('.counter').counterUp();
 
 // Scroll to top configuration starts
 window.onscroll = function isScrolled() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
         $(".scroll-to-top").css("display", "grid");
         $('header').css("background", "#1E88E5");
     } else {
