@@ -320,6 +320,14 @@ header {
     position: relative;
 }
 
+.my-icon-wrapper3 {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
 .my-icon-wrapper2 i {
     color: #1E88E5 !important;
 }
@@ -933,6 +941,29 @@ footer ul li {
 
 
 /* Services Page Ends */
+
+
+/* Contact Page Starts */
+
+.sharur-map {
+    width: 100%;
+    object-fit: fill;
+}
+
+.contact-page {
+    width: 100%;
+    height: 320px;
+    background: url('../img/contactbg.jpg');
+}
+
+.contact-page-header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+
+/* Contact Page Ends */
 
 
 /* <!-- Scroll to top button --> */
