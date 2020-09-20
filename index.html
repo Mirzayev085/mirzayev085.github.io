@@ -31,7 +31,7 @@
             </div>
             <div class="menu-links">
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="./index.html">HOME</a></li>
                     <li class="position-relative">
                         <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                             SERVICES +
@@ -44,9 +44,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="/about.html">ABOUT US</a></li>
-                    <li><a href="#">OUR WORKS</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="./about.html">ABOUT US</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./portfolio.html">OUR WORKS</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
                 </ul>
             </div>
             <div class="myhamburger-wrapper">
@@ -306,14 +307,22 @@
                 <h2>Check Out Our Projects</h2>
                 <p class="font-weight-light text-muted w-75 m-auto">Lorem ipsum dolor, sit amet claudantium et quae volvoluptatum ad dolore! Perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, nesciunt quibusdam? Fuga dignissimos tempore sequi itaque.</p>
             </div>
-            <div class="row pt-5">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="button-group filters-button-group mt-5">
+                <div class="d-flex list-unstyled btn-group btn-group-toggle w-50">
+                    <button class="button is-checked btn btn-pill btn-outline-primary" data-filter="*">All</button>
+                    <button class="button btn btn-pill btn-outline-primary" data-filter=".sharur-smm">SMM</button>
+                    <button class="button btn btn-pill btn-outline-primary" data-filter=".sharur-design">Design</button>
+                    <button class="button btn btn-pill btn-outline-primary" data-filter=".sharur-branding">Branding</button>
+                </div>
+            </div>
+            <div class="row pt-5 sharur-portfolio-grid">
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-smm" data-category="smm">
                     <div class="card border-0 mb-3 project-card">
                         <div class="project-card-overlay">
                             <a href="#" class="text-decoration-none">
                                 <div class="project-overlay-text">
                                     <h5 class="text-white m-0">Sharur MMC</h5>
-                                    <span class="font-weight-lighter">Branding</span>
+                                    <span class="font-weight-lighter">SMM</span>
                                     <i class="fa fa-search pt-2"></i>
                                 </div>
                             </a>
@@ -321,13 +330,13 @@
                         <img src="./assets/img/project1.jpg " class="project-img" alt="... ">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-design" data-category="design">
                     <div class="card border-0 mb-3 project-card">
                         <div class="project-card-overlay">
                             <a href="#" class="text-decoration-none">
                                 <div class="project-overlay-text">
                                     <h5 class="text-white m-0">Sharur MMC</h5>
-                                    <span class="font-weight-lighter">Branding</span>
+                                    <span class="font-weight-lighter">Design</span>
                                     <i class="fa fa-search pt-2"></i>
                                 </div>
                             </a>
@@ -335,7 +344,7 @@
                         <img src="./assets/img/project2.jpg " class="project-img" alt="... ">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-branding" data-category="branding">
                     <div class="card border-0 mb-3 project-card">
                         <div class="project-card-overlay">
                             <a href="#" class="text-decoration-none">
@@ -349,7 +358,49 @@
                         <img src="./assets/img/project3.jpg " class="project-img" alt="... ">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-design" data-category="design">
+                    <div class="card border-0 mb-3 project-card">
+                        <div class="project-card-overlay">
+                            <a href="#" class="text-decoration-none">
+                                <div class="project-overlay-text">
+                                    <h5 class="text-white m-0">Sharur MMC</h5>
+                                    <span class="font-weight-lighter">Design</span>
+                                    <i class="fa fa-search pt-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="./assets/img/project4.jpg " class="project-img" alt="... ">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-smm" data-category="smm">
+                    <div class="card border-0 mb-3 project-card">
+                        <div class="project-card-overlay">
+                            <a href="#" class="text-decoration-none">
+                                <div class="project-overlay-text">
+                                    <h5 class="text-white m-0">Sharur MMC</h5>
+                                    <span class="font-weight-lighter">SMM</span>
+                                    <i class="fa fa-search pt-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="./assets/img/project5.jpg" class="project-img" alt="... ">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-smm" data-category="smm">
+                    <div class="card border-0 mb-3 project-card">
+                        <div class="project-card-overlay">
+                            <a href="#" class="text-decoration-none">
+                                <div class="project-overlay-text">
+                                    <h5 class="text-white m-0">Sharur MMC</h5>
+                                    <span class="font-weight-lighter">SMM</span>
+                                    <i class="fa fa-search pt-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="./assets/img/project6.jpg" class="project-img" alt="... ">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-branding" data-category="branding">
                     <div class="card border-0 mb-3 project-card">
                         <div class="project-card-overlay">
                             <a href="#" class="text-decoration-none">
@@ -360,14 +411,28 @@
                                 </div>
                             </a>
                         </div>
-                        <img src="./assets/img/project4.jpg " class="project-img" alt="... ">
+                        <img src="./assets/img/project7.jpg" class="project-img" alt="... ">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 sharur-portfolio-item sharur-design" data-category="design">
+                    <div class="card border-0 mb-3 project-card">
+                        <div class="project-card-overlay">
+                            <a href="#" class="text-decoration-none">
+                                <div class="project-overlay-text">
+                                    <h5 class="text-white m-0">Sharur MMC</h5>
+                                    <span class="font-weight-lighter">Design</span>
+                                    <i class="fa fa-search pt-2"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <img src="./assets/img/project8.jpg" class="project-img" alt="... ">
                     </div>
                 </div>
             </div>
-            <div class="text-center pt-5">
+            <!-- <div class="text-center pt-5">
                 <a href="#"> <button class="btn-sharur mt-3 mb-5">View More <i
                             class="fa fa-long-arrow-right"></i></button></a>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- Showcase section ends -->
@@ -558,6 +623,8 @@
     <script src="./assets/js/slick.min.js"></script>
     <!-- AOS script -->
     <script src="./assets/js/aos.js"></script>
+    <!-- Sorter JS -->
+    <script src="./assets/js/sorter.js"></script>
     <!-- Sharur Js script -->
     <script src="./assets/js/script.js"></script>
 </body>

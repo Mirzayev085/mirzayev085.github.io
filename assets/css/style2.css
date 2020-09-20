@@ -1,4 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        .footer-h {
+            position: relative;
+        }
+        
+        .footer-h::after {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 4px;
+            background: blue;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s linear;
+        }
+        
+        .footer-h:hover::after {
+            width: 400px;
+        }
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -151,4 +169,4 @@ header {
         flex-direction: column !important;
         height: auto !important;
     }
-}
+} */

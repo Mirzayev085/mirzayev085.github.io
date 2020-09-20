@@ -99,7 +99,7 @@ header {
     color: rgb(0, 0, 0) !important;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:962px) {
     .menu-wrapper {
         width: 95%;
         display: flex !important;
@@ -176,7 +176,7 @@ header {
     }
 }
 
-@media screen and (min-width:950px) {
+@media screen and (min-width:962px) {
     .collapse-lg {
         position: absolute !important;
         background: #1565C0 !important;
@@ -197,7 +197,7 @@ header {
 #main {
     width: 100%;
     height: auto;
-    background-image: url('/assets/img/slider.jpg');
+    background-image: url('../img/slider.jpg');
     padding-top: 170px;
     padding-bottom: 50px;
 }
@@ -418,7 +418,7 @@ header {
     justify-content: center;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:962px) {
     .testimonials-wrapper h4 {
         color: white !important;
     }
@@ -441,6 +441,11 @@ header {
     width: 100%;
     height: auto;
     background: #F6F6F8;
+    padding-bottom: 200px;
+}
+
+.port-grid {
+    position: relative;
 }
 
 .project-img {
@@ -600,7 +605,7 @@ footer ul li {
 /* Footer section ends */
 
 
-/* Sbout us page starts */
+/* About us page starts */
 
 .about-us-page {
     width: 100%;
@@ -678,6 +683,10 @@ footer ul li {
     transition: 0.4s ease-in-out;
 }
 
+.socials-div a {
+    text-decoration: none;
+}
+
 .team-user:hover .socials-div {
     opacity: 1;
     transform: translate(0px, -20px);
@@ -722,6 +731,124 @@ footer ul li {
 
 
 /* Our Team Section Ends */
+
+
+/* Our Mission Section Starts */
+
+#our-mission {
+    width: 100%;
+    height: auto;
+    background: url('../img/missionbg.jpg');
+    background-attachment: fixed;
+    padding: 50px 0px;
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mission-number {
+    font-size: 35px;
+    color: #1E88E5;
+}
+
+
+/* Our Mission Section Starts */
+
+
+/* Blog Page Starts */
+
+.blog-page {
+    width: 100%;
+    height: 320px;
+    background: url('../img/blogbg.jpg');
+}
+
+.blog-page-header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.blog-posts {
+    padding: 50px 0px;
+}
+
+.blog-card:hover .blog-title {
+    color: #1E88E5;
+}
+
+.blog-card:hover {
+    cursor: pointer;
+}
+
+.blog-tag {
+    border: 1px solid rgb(196, 196, 196);
+    padding: 0px 5px 0px 15px;
+    border-radius: 2px;
+    color: grey;
+    position: relative;
+    margin: 2px;
+}
+
+.blog-tag::before {
+    position: absolute;
+    content: '#';
+    left: -2px;
+    top: 0;
+    padding-left: 3px;
+}
+
+.blog-categories {
+    list-style: none;
+}
+
+.blog-categories a {
+    text-decoration: none;
+    color: grey;
+}
+
+.media a {
+    text-decoration: none;
+}
+
+.media a:hover {
+    color: #1a66ff !important;
+}
+
+.blog-detail-image {
+    width: 330px !important;
+    height: 330px !important;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .blog-detail-image {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .blog-detail-image {
+        width: 300px !important;
+    }
+}
+
+.blog-details .fa-facebook {
+    color: #4267B2;
+}
+
+.blog-details .fa-linkedin {
+    color: #2867B2;
+}
+
+.blog-details .fa-twitter {
+    color: #1DA1F2;
+}
+
+
+/* Blog Page Ends */
 
 
 /* <!-- Scroll to top button --> */
