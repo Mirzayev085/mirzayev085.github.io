@@ -32,6 +32,39 @@ $(document).ready(function() {
     });
     // Configuring Owl Carousel in Our Customers section ends
 
+
+
+    // Portfolio Grid Sort starts
+
+    var $grid = $('.sharur-portfolio-grid').isotope({
+        itemSelector: '.sharur-portfolio-item',
+        layoutMode: 'fitRows'
+    });
+    var filterFns = {
+        numberGreaterThan50: function() {
+            var number = $(this).find('.number').text();
+            return parseInt(number, 10) > 50;
+        },
+        ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match(/ium$/);
+        }
+    };
+    $('.filters-button-group').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        filterValue = filterFns[filterValue] || filterValue;
+        $grid.isotope({ filter: filterValue });
+    });
+    $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+        });
+    });
+
+    // Portfolio Grid Sort Ends
+
 });
 
 // Configuring Hamburger menu 
@@ -67,32 +100,3 @@ $(".scroll-to-top").on("click", function() {
     document.documentElement.scrollTop = 0;
 });
 // Scroll to top configuration ends
-
-
-
-var $grid = $('.sharur-portfolio-grid').isotope({
-    itemSelector: '.sharur-portfolio-item',
-    layoutMode: 'fitRows'
-});
-var filterFns = {
-    numberGreaterThan50: function() {
-        var number = $(this).find('.number').text();
-        return parseInt(number, 10) > 50;
-    },
-    ium: function() {
-        var name = $(this).find('.name').text();
-        return name.match(/ium$/);
-    }
-};
-$('.filters-button-group').on('click', 'button', function() {
-    var filterValue = $(this).attr('data-filter');
-    filterValue = filterFns[filterValue] || filterValue;
-    $grid.isotope({ filter: filterValue });
-});
-$('.button-group').each(function(i, buttonGroup) {
-    var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on('click', 'button', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-    });
-});
