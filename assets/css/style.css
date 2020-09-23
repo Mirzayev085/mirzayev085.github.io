@@ -446,14 +446,14 @@ header {
 
 @media screen and (max-width:962px) {
     .testimonials-wrapper h4 {
-        color: white !important;
+        color: black !important;
     }
     .testimonial-slider {
         width: 80%;
-        color: white !important;
+        color: black !important;
     }
     .testimonial-slider span {
-        color: white !important;
+        color: black !important;
     }
 }
 
